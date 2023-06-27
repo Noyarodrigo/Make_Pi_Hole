@@ -9,7 +9,9 @@ Install Pi-hole as a local DNS using docker for ADblocking
 - cd to the respective folder, by the moment is an arch installation
 - Run "make" for further instructions
 - A typical installation would be: 1) make install > 2) make run > 3) make configure
-
+- Config the Web UI
+  - docker exec -it pihole /bin/bash #access the container for config
+  - pihole -a -p #change password or specify one in the pihole.yaml
 ---
 
 ### In later reviews I'll add an ubuntu (debian) version
